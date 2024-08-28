@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="/html/main.html"><img src="/images/pabilis-logo.png" class="logo-header" alt=""></a>
+    </header>
+    <div  class="register-container">
+        <div  class="register-wrapper">
+            <div>
+                <div class="register">
+                    <p class="register-top">Register</p>
+                </div>
+            </div>
+            <div class="register-input-container">
+                <p class="error userErrorMsg"></p>
+                <input type="text"  class="jsInputUser user-input input-column" placeholder="Username">
+            </div>
+            <div class="register-input-container">
+                <p class="error emailErrorMsg"></p>
+                <input  class="jsInputEmail email-input input-column" type="email"  required placeholder="Email">
+            </div>
+            <div class="register-input-container">
+                <p class="error passwordErrorMsg"></p>
+                <input type="password" class="jsInputPassword password-input input-column" placeholder="Password">
+            </div>
+            <div class="error register-input-container">
+                <p class="repeatPasswordErrorMsg"></p>
+                <input type="password" class="jsInputRepeatPassword password-input input-column" placeholder="Repeat password">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" class="jsCheckbox checkbox-id"><p> I agree to terms & conditions</p>
+            </div>
+            
+            <div class="register-input-container-btn">
+                <input type="submit" class="jsSubmitBtn submit-btn input-column">
+            </div>
+            <div class="register-input-container-acc">
+                <p>Alreay have an account? <a href="/html/login.html"> Click here</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="/javascript/register.js"></script>
+    
+
+</body>
+</html>
