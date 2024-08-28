@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    height: 80px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem calc((100vw - 1300px) / 2);
+     
+}
+.pabilis-logo{
+    height: 2.5rem;
+
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+    transition: 0.3s ease;
+   
+}
+
+header a:hover{
+    color:rgb(206, 103, 6); 
+    
+}
+.menu-burger-btn{
+    display: none;
+    color: white;
+   
+}
+
+.hero-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(224, 126, 34); 
+}
+
+.hero-title p{
+    font-family: "BenchNine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: white; 
+}
+
+.widget-container-populated{
+    display: grid;
+    grid-template-columns:1fr;
+    padding: 2rem calc((100vw - 1300px) / 2);
+
+}
+.widget{
+    padding-bottom: 40px;
+}
+.widget p{
+    font-size: 20px;
+    line-height: 35px;
+    color:rgba(0,0,0,0.8)
+}
+
+.input-con{
+    padding-bottom: 69px;
+    display: grid;
+    grid-template-columns:1fr;
+}
+.input-con p{
+    padding-bottom: 50px;
+    font-size: 17px;
+    color:rgb(240, 136, 39);  ;
+
+}
+
+.input-con input{
+    outline: none;
+    border-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 5px;
+    color:rgb(224, 126, 34); 
+    
+
+}
+.input-con-submit{
+    padding: 10px 30px;
+    font-size: 1rem;
+    color:white;
+    border-style: none;
+    box-shadow: 3px 3px 9px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    background-color: rgb(224, 126, 34);
+    cursor: pointer;
+}
+.input-con-submit:hover{
+    background-color: rgb(255, 123, 0);
+}
+@media screen and (max-width: 768px){
+    .widget-container{
+        display: grid;
+        padding: 10px;
+    }
+    .widget-input-container{
+        padding: 10px;
+    }
+}

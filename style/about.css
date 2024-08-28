@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    height: 80px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem calc((100vw - 1300px) / 2);
+}
+
+.pabilis-logo{
+    height: 2.5rem;
+
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+    transition: 0.3s ease;
+   
+}
+
+header a:hover{
+    color:rgb(206, 103, 6); 
+    
+}
+.menu-burger-btn{
+    display: none;
+    color: white;
+   
+}
+
+/*--------About Us----------*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+.hero-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(224, 126, 34); 
+}
+
+.hero-title p{
+    font-family: "BenchNine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: white; 
+}
+
+.elementor-widget-container{
+    display: flex;
+    justify-content: center;
+}
+
+.elementor-widget{
+    justify-content:center;
+    align-items:baseline;
+    width: 500px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.elementor-widget p{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/*----------the benefits-----------*/
+.hero-2-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(224, 126, 34);
+    height: 150px;
+}
+.hero-2-details p{
+    font-family: "BenchNine", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+}
+.hero-2-list-divider{
+    display: flex;
+    justify-content: center;
+}
+.hero-2-list-container{
+    justify-content:center;
+    align-items:baseline;
+    width: 500px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.hero-2-list-container p{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 768px){
+    .elementor-widget-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+        
+    }
+    .elementor-widget, .hero-2-list-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+      
+    }
+
+    .hero-2-list-divider{
+        display: block;
+    }
+
+    .elementor-widget-sec{
+        padding-top: 0px;
+    }
+
+    .hero-2-list-container-sec{
+        padding-top:0px;
+    }
+
+}
+    

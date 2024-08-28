@@ -1,0 +1,346 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+.dashboard-section{
+    display: flex;
+}
+
+header{
+    position: absolute;
+    left: 220px;
+    
+    padding-top: 10px;
+    width: 86%;
+    
+}
+.login-info{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.list-stats-container{
+    width:100%;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+.total-list-logo i{
+   align-self: center;
+   font-size: 25px;
+  
+
+   color: white;
+}
+
+.total-list-details p{
+ padding-left: 6px;
+ margin: 0px;
+ font-size: 16px;
+ color: white;
+ 
+}
+
+.indicator-container{
+    display: grid;
+    grid-template-columns: 180px 180px 100px;
+    column-gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    align-items: center;
+    
+
+}
+.save-list{
+    grid-column-end: 10;
+    
+}
+
+.save-list-btn{
+    padding: 10px 30px;
+    background-color: rgb(5, 196, 78);
+    border-radius: 3px;
+    border-style: none;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.3);
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.total-container{
+    display: flex;
+    flex-basis:180px;
+    gap:10px;
+    padding-left: 8px;
+    line-height: 23px;
+    padding-bottom: 5px;
+    flex-direction: row;
+    background-color:rgb(224, 126, 34);
+    align-items: center;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.3);
+       
+}
+
+.total-container:hover{
+    margin-top: -4px;
+    
+   
+
+}
+
+.nav-side-container{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    display: flex;
+    align-items: start;
+    width: 200px;
+    height: 100vh;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+.nav-side-profile-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    background-color: red;
+    padding:10px;
+    font-size: 20px;
+    
+    
+}
+.fa-house{
+    cursor: pointer;
+}
+
+.fa-house:hover{
+    color: white;
+    transition: 0.3s;
+}
+.nav-side-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    padding:10px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    font-size: 17px;
+    transition: 0.4s;
+
+}
+
+.nav-side-box i{
+    font-size: 27px;
+    
+}
+
+.nav-side-box:hover{
+    border-right: solid 5px rgba(224, 126, 34, 0.4);
+    cursor: pointer;
+    color: rgb(224, 126, 34);
+    
+}
+
+.listed-items-container{
+    padding:20px;
+    color: rgb(224, 126, 34);
+    font-size: 15px;
+    font-weight: 900;
+    
+}
+
+.ul-container{
+   display: grid;
+   grid-template-columns: .85fr 1.5fr 1.5fr 1fr 1.5fr;
+   font-size: 14px;
+   font-weight: 600;
+   
+}
+
+.ul-container div{
+    border: solid 1px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    padding:5px 12px
+}
+
+
+.listed-item-value{
+ display: grid;
+ grid-template-columns: .85fr 1.5fr 1.5fr 1fr 1.5fr;
+ font-size: 14px;
+ 
+ 
+}
+
+.listed-item-value p {
+    padding:5px 12px;
+    
+}
+.listed-item-value input{
+   margin:5px 12px;
+   
+}
+
+.listed-item-value-2{
+    display: grid;
+    grid-template-columns: .85fr 1.5fr 1.5fr 1fr 1.5fr;
+    padding:15px 0px;
+    
+    
+}
+.listed-item-value-2 input{
+    border-radius: 3px;
+    padding: 5px;
+    border-width:1px;
+    border-color: rgba(0,0,0,0.4);
+    outline: none;
+    
+  
+    
+
+}
+
+#add-btn{
+    padding:6px 20px;
+    background-color: rgb(5, 196, 78);
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+#add-btn:hover{
+    background-color: rgb(5, 196, 78);
+}
+
+.listed-item-value-2 input:focus::placeholder{
+    color: transparent;
+}
+    
+.quantity-input{
+    max-width: 87px;
+}
+.ul-list-quantity{
+    display: grid;
+    grid-template-columns: .85fr;
+
+}
+#quantitySelect{
+    width: 60px;
+}
+
+.action-delete{
+    padding:6px 20px;
+    background-color: rgb(216, 24, 40);
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    cursor: pointer;
+
+}
+/*------submit button in your list-----------*/
+.list-naming-container{
+    width:100%;
+    height: 90vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.list-naming-hider{
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    
+    
+    
+}
+
+.closed-btn{
+    position: absolute;
+    right:-12px;
+    top:-10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+   
+    
+    
+}
+
+.submit-btn-container{
+    display:grid;
+    grid-template-rows: 100px;
+    gap:30px;
+    justify-items: center;
+
+}
+
+.list-submit-btn{
+    padding:10px 60px;
+    background-color: rgb(5, 196, 78);
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    color:rgb(63, 54, 54);
+    font-size: 16px;
+
+}
+
+#js-list-naming{
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom:1px solid;
+    font-size: 18px;
+    opacity: 0.8;
+   
+    
+}
+#js-list-naming:focus::placeholder{
+    color: transparent;
+}
+
+.section-content{
+    display: none;
+}
+.active{
+    display: flex;
+}
+
+/*-----Courier section----*/
+
+.courier-header{
+    position: absolute;
+    left:220px
+
+}
+#pabilis{
+    width:150px
+}
+
